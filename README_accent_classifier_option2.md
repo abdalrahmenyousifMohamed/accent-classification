@@ -1,6 +1,6 @@
-# 🗣️ Accent Classification Tool
+#  Accent Classification Tool
 
-## 📌 Features
+##  Features
 
 - Accepts any public video URL (YouTube, Loom, direct MP4 links, etc.)
 - Extracts and processes spoken English audio
@@ -12,7 +12,7 @@
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ### Step-by-Step Process
 
@@ -40,7 +40,7 @@ Uses a pre-trained ECAPA-TDNN model from SpeechBrain:
 
 
 
-## 🧪 Example Output
+##  Example Output
 
 ```
 Enter video URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
@@ -54,7 +54,7 @@ Explanation: Strong acoustic cues match typical American English speech patterns
 
 ---
 
-## 🛠️ Built With
+## 🛠 Built With
 
 - `yt-dlp` – video downloader
 - `OpenAI Whisper` – ASR transcription
@@ -64,7 +64,7 @@ Explanation: Strong acoustic cues match typical American English speech patterns
 
 ---
 
-## 📥 Requirements
+##  Requirements
 
 Install with:
 
@@ -76,7 +76,7 @@ Ensure `ffmpeg` is installed and accessible via command line.
 
 ---
 
-## 🙋 FAQ
+##  FAQ
 
 **Q: Can it work offline?**  
 A: Yes. Once models and dependencies are downloaded, Whisper and SpeechBrain can run offline.
