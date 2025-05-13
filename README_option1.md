@@ -1,6 +1,6 @@
-# 🎙️ Whisper ASR + Pyannote for Accent Categorization
+#  Whisper ASR + Pyannote for Accent Categorization
 
-## 🧩 Introduction
+##  Introduction
 
 Accent categorization is the task of identifying a speaker’s accent from spoken audio (e.g., Indian English, American English, British English). It plays a vital role in:
 
@@ -14,7 +14,7 @@ This project combines **speaker diarization** and **automatic speech recognition
 
 ---
 
-## 🔧 Technologies Used
+##  Technologies Used
 
 | Component               | Purpose                            | Tool                                |
 |------------------------|------------------------------------|-------------------------------------|
@@ -26,24 +26,24 @@ This project combines **speaker diarization** and **automatic speech recognition
 
 ---
 
-## 🧠 Why This Setup Works for Accent Categorization
+##  Why This Setup Works for Accent Categorization
 
-### 1. 🎯 Speaker-Aware Accent Detection  
+### 1.  Speaker-Aware Accent Detection  
 - **Challenge**: Accent is a speaker-level trait, not per utterance.  
 - **Solution**: Use diarization to group all audio per speaker.  
 - **Benefit**: More accurate and personalized accent categorization.
 
-### 2. ✨ Whisper’s Robust Multilingual Transcription  
+### 2.  Whisper’s Robust Multilingual Transcription  
 - Trained on diverse, multi-accent corpora  
 - Maintains performance across heavily-accented English  
 - Transcripts can support phoneme-level or linguistic feature analysis
 
-### 3. 🔍 Pyannote’s Effective Speaker Segmentation  
+### 3.  Pyannote’s Effective Speaker Segmentation  
 - Strong performance in real-world noisy scenarios  
 - Supports overlapping speech  
 - Provides speaker embeddings to group identity across segments
 
-### 4. 🧬 ECAPA-TDNN for Speaker Embedding Extraction
+### 4.  ECAPA-TDNN for Speaker Embedding Extraction
 - Utilizes the speechbrain/spkrec-ecapa-voxceleb model
 - Extracts high-quality speaker embeddings using attentive statistical pooling
 - Embeddings can be used for clustering and accent classification
@@ -52,7 +52,7 @@ This project combines **speaker diarization** and **automatic speech recognition
 
 ---
 
-## 🔁 Workflow Summary
+##  Workflow Summary
 
 ```plaintext
 Input Audio
@@ -76,7 +76,7 @@ Output: (accent label)
 
 ---
 
-## 🛠️ Implementation Notes
+##  Implementation Notes
 
 - **Speaker Embedding Extraction**:  the speechbrain/spkrec-ecapa-voxceleb model to extract 192-dimensional speaker embeddings.
 - **Clustering Speaker Embeddings**: Helps correct diarization errors and improves speaker grouping.
@@ -85,7 +85,7 @@ Output: (accent label)
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - **Diarization Errors**: False splits/merges can skew accent predictions.  
 - **ASR Bias**: Whisper may transcribe differently depending on accent.  
